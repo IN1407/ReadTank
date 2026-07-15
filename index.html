@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta
+      name="description"
+      content="ReadTank — a 3D browser tank battle game where kids read short passages to earn a second chance against each boss."
+    />
+    <meta name="color-scheme" content="dark" />
+    <meta name="theme-color" content="#0b1120" />
+    <title>ReadTank — read to win</title>
+    <style>
+      /* Paint the dark canvas before CSS/JS load — no white flash. */
+      html {
+        background-color: #0b1120;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

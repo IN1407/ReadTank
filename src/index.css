@@ -1,0 +1,23 @@
+@import 'tailwindcss';
+
+:root {
+  color-scheme: dark;
+  --rt-bg: #0b1120;
+}
+
+body {
+  background-color: var(--rt-bg);
+  @apply text-slate-200 antialiased;
+  /* The game is fullscreen; avoid rubber-band scrolling on touch. */
+  overscroll-behavior: none;
+}
+
+/* Slim dark scrollbars */
+* {
+  scrollbar-color: #334155 transparent;
+}
+
+/* Focus visibility for keyboard users */
+:focus-visible {
+  @apply outline-2 outline-offset-2 outline-indigo-400;
+}
